@@ -1,0 +1,36 @@
+﻿@model HadankyScaffolded.Models.Hadanky
+
+@{
+    ViewData["Title"] = "Vytvořit";
+}
+
+<h1>Vytvořit novou hádanku</h1>
+<hr />
+<div class="row">
+    <div class="col-md-10">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Otazka" class="control-label"></label>
+                <input asp-for="Otazka" class="form-control" />
+                <span asp-validation-for="Otazka" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Odpoved" class="control-label"></label>
+                <input asp-for="Odpoved" class="form-control" />
+                <span asp-validation-for="Odpoved" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Vytvořit" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Zpět</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

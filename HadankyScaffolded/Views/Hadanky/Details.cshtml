@@ -1,0 +1,28 @@
+﻿@model HadankyScaffolded.Models.Hadanky
+
+@{
+    ViewData["Title"] = "Zobrazit";
+}
+
+<div>
+    <h4>Hádanka:</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Otazka)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Otazka)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Odpoved)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Odpoved)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Upravit</a> |
+    <a asp-action="Index">Zpět</a>
+</div>

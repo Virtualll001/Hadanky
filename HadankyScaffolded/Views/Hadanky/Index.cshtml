@@ -1,0 +1,38 @@
+﻿@model IEnumerable<HadankyScaffolded.Models.Hadanky>
+
+@{
+    ViewData["Title"] = "Hádanky";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <h1>HÁDEJ!</h1>
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.Odpoved)
+            </th>*@
+            <th style="text-align:right">
+            <a asp-action="Create">Vytvořit novou hádanku.</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Otazka)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Odpoved)
+            </td>*@
+            <td style="text-align:right">
+                <a asp-action="Edit" asp-route-id="@item.Id" title="upravit"><i class="far fa-edit"></i></a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Zobrazit</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id" title="smazat"><i class="far fa-trash-alt"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
