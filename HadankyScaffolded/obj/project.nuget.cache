@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qj9ZLubKso10Gs98ugovVDLbg8hGHFHp0bOp5/Q1AKRo2hnDDD9N99dOG3lxqId9J/Fu5I51UGk6R7/uXVF0XA==",
+  "dgSpecHash": "lxdGI9zpDp9JSYBYpe5QnGFXHEc+IiDZca4t8f+MGn+MypirFM/uhu7BJX9kOPTcWybg3ZqYy5UYWjdGWV8+Hg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lonet\\source\\repos\\HadankyScaffolded\\HadankyScaffolded\\HadankyScaffolded.csproj",
+  "projectFilePath": "C:\\Users\\lonet\\source\\repos\\Hadanky\\HadankyScaffolded\\HadankyScaffolded.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lonet\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lonet\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.1\\microsoft.aspnetcore.cryptography.internal.5.0.1.nupkg.sha512",
